@@ -1,0 +1,31 @@
+Package: tableonetoexcel
+Title: Add Any Table to a Styled Excel Workbook
+Version: 0.1.0
+Authors@R:
+    person("Felippe", "Lazar", email = "felippelazarneto@gmail.com",
+           role = c("aut", "cre"))
+Description: A workbook object that turns any table-like object (data
+    frames, matrices, contingency tables, descriptive tables, gtsummary
+    tables, survival fits, regression models, test results) into
+    consistently styled Excel sheets (banded rows, auto column widths,
+    readable labels) with one line per table.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends:
+    R (>= 4.1)
+Imports:
+    openxlsx2,
+    R6,
+    stats,
+    utils
+Suggests:
+    broom,
+    broom.helpers,
+    gtsummary,
+    survival,
+    tableone,
+    testthat (>= 3.0.0),
+    tibble
+Config/testthat/edition: 3
